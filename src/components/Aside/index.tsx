@@ -58,7 +58,7 @@ const Aside: React.FC = () => {
       <C.IntroArea>
         <C.TextGray>INTRO</C.TextGray>
         <C.Presentation>
-          Hi, I'm Marcelo, a React Developer based out of Brazil County, BR.
+          Hi, I'm Marcelo, a React Developer based out of Brazil Country, BR.
         </C.Presentation>
       </C.IntroArea>
       <C.SocialMediaArea>

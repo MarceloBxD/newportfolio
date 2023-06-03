@@ -51,7 +51,6 @@ export const Title = styled.h2`
   text-align: center;
   color: #000;
   transition: all 0.2s ease-in;
-  position: relative;
 
   &:hover {
     cursor: pointer;
