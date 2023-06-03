@@ -21,7 +21,20 @@ const MainContent: React.FC = () => {
     >
       <C.HamburgerMenu onClick={() => setOpenModal(!openModal)}>
         {openModal ? (
-          <svg></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            width={35}
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +52,34 @@ const MainContent: React.FC = () => {
           </svg>
         )}
       </C.HamburgerMenu>
+      {openModal && (
+        <C.Modal>
+          <svg
+            onClick={() => setOpenModal(!openModal)}
+            style={{
+              cursor: "pointer",
+              position: "absolute",
+              top: "20px",
+              right: "20px",
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            width={35}
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+          <C.ModalItem>PROJECTS</C.ModalItem>
+          <C.ModalItem>ABOUT ME</C.ModalItem>
+          <C.ModalItem>CONTACT</C.ModalItem>
+        </C.Modal>
+      )}
       <C.Content>
         <S.TextGray>MY WORK</S.TextGray>
         <C.Title

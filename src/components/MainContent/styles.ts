@@ -57,3 +57,41 @@ export const Title = styled.h2`
     background-color: #ebff00;
   }
 `;
+
+export const Modal = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  animation: slideFromTop 1s ease-in-out normal;
+
+  @keyframes slideFromTop {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+`;
+
+export const ModalItem = styled.h2`
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
