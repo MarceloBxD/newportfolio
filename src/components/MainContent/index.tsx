@@ -7,6 +7,7 @@ import mobile from "../../../public/images/mobile.jpg";
 
 const MainContent: React.FC = () => {
   const [imageActive, setImageActive] = useState<string | null>(null);
+  const [openModal, setOpenModal] = useState<boolean>(false);
 
   return (
     <C.Container
@@ -18,21 +19,25 @@ const MainContent: React.FC = () => {
         backgroundPosition: "center",
       }}
     >
-      <C.HamburgerMenu>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          width={35}
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
+      <C.HamburgerMenu onClick={() => setOpenModal(!openModal)}>
+        {openModal ? (
+          <svg></svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width={35}
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        )}
       </C.HamburgerMenu>
       <C.Content>
         <S.TextGray>MY WORK</S.TextGray>
