@@ -4,6 +4,7 @@ import * as S from "../Aside/styles";
 import freela from "../../../public/images/freela.jpg";
 import programmer from "../../../public/images/programmer.jpg";
 import mobile from "../../../public/images/mobile.jpg";
+import { Link } from "react-router-dom";
 
 const MainContent: React.FC = () => {
   const [imageActive, setImageActive] = useState<string | null>(null);
@@ -26,12 +27,12 @@ const MainContent: React.FC = () => {
             fill="none"
             viewBox="0 0 24 24"
             width={35}
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
@@ -41,12 +42,12 @@ const MainContent: React.FC = () => {
             fill="none"
             width={35}
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
@@ -66,18 +67,21 @@ const MainContent: React.FC = () => {
             fill="none"
             viewBox="0 0 24 24"
             width={35}
-            stroke-width="1.5"
+            strokeWidth="1.5"
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-          <C.ModalItem>PROJECTS</C.ModalItem>
-          <C.ModalItem>ABOUT ME</C.ModalItem>
-          <C.ModalItem>CONTACT</C.ModalItem>
+          <Link to="/projects">
+            <C.ModalItem>MORE PROJECTS</C.ModalItem>
+          </Link>
+          <Link to="/about">
+            <C.ModalItem>ABOUT ME</C.ModalItem>
+          </Link>
         </C.Modal>
       )}
       <C.Content>

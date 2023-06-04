@@ -67,6 +67,7 @@ const Aside: React.FC = () => {
           {socialmedias.map((item) => (
             <C.SocialMediaIcon
               href={item.url}
+              key={item.id}
               download={item.name === "Download CV" ? "CV.pdf" : ""}
             >
               {item.icon}
