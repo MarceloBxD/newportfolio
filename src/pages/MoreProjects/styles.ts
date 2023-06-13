@@ -56,3 +56,27 @@ export const ProjectImage = styled.img`
   background-size: cover;
   background-repeat: no-repeat;
 `;
+
+export const ButtonLeft = styled.button`
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #ebff00;
+    color: #000000;
+  }
+`;

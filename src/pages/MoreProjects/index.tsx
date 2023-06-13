@@ -8,6 +8,7 @@ import {
   quiz,
   texttransform,
   git,
+  reciclelivros,
 } from "../../../public/images";
 import { Link } from "react-router-dom";
 
@@ -15,9 +16,9 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "Template Barbearia",
-      img: barbearia,
-      url: "https://elbidogon-template.netlify.app/",
+      title: "Recicle Livros",
+      img: reciclelivros,
+      url: "https://github.com/MarceloBxD/livrosseminovos",
     },
     {
       id: 2,
@@ -49,6 +50,12 @@ const Projects: React.FC = () => {
       img: texttransform,
       url: "https://sage-chimera-61fb2d.netlify.app/",
     },
+    {
+      id: 7,
+      title: "Template Barbearia",
+      img: barbearia,
+      url: "https://elbidogon-template.netlify.app/",
+    },
   ];
 
   return (
@@ -66,6 +73,23 @@ const Projects: React.FC = () => {
           </Link>
         ))}
       </C.Projects>
+      <Link to="/">
+        <C.ButtonLeft title="Voltar para página inicial">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+        </C.ButtonLeft>
+      </Link>
     </C.Container>
   );
 };

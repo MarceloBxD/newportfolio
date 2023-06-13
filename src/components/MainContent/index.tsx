@@ -76,10 +76,10 @@ const MainContent: React.FC = () => {
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-          <Link to="/projects">
-            <C.ModalItem>MORE PROJECTS</C.ModalItem>
+          <Link style={{ textDecoration: "None" }} to="/projects">
+            <C.ModalItem>MY PROJECTS</C.ModalItem>
           </Link>
-          <Link to="/about">
+          <Link style={{ textDecoration: "None" }} to="/about">
             <C.ModalItem>ABOUT ME</C.ModalItem>
           </Link>
         </C.Modal>
