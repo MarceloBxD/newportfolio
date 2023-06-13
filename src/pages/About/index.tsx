@@ -3,14 +3,6 @@ import * as C from "./styles";
 
 import { Link } from "react-router-dom";
 
-interface Course {
-  id: number;
-  name: string;
-  teacher: string;
-  url: string;
-  img: string;
-}
-
 const About: React.FC = () => {
   const courses = [
     {
