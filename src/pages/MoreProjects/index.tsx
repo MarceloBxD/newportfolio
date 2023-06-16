@@ -1,19 +1,25 @@
 import React from "react";
 import * as C from "./styles";
 
-import {
-  barbearia,
-  climatempo,
-  metamask,
-  quiz,
-  texttransform,
-  git,
-  reciclelivros,
-} from "../../../public/images";
+import barbearia from "../../../public/images/barbearia.png";
+import climatempo from "../../../public/images/climatempo.png";
+import git from "../../../public/images/github.png";
+import metamask from "../../../public/images/metamask.png";
+import quiz from "../../../public/images/quiz.png";
+import reciclelivros from "../../../public/images/reciclelivros.png";
+import texttransform from "../../../public/images/TextTransformer.png";
+
 import { Link } from "react-router-dom";
 
+interface IProject {
+  id: number;
+  title: string;
+  img: string;
+  url: string;
+}
+
 const Projects: React.FC = () => {
-  const projects = [
+  const projects: IProject[] = [
     {
       id: 1,
       title: "Recicle Livros",
