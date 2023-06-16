@@ -9,7 +9,7 @@ const About: React.FC = () => {
       id: 1,
       teacher: "Bonieky Lacerda",
       url: "https://b7web.com.br/",
-      img: "https://b7web.com.br/wp-content/uploads/2018/12/b7_logo.png",
+      img: "https://guiadeti.com.br/wp-content/uploads/2022/04/guia-cursos-b7web.png",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const About: React.FC = () => {
       id: 3,
       teacher: "Luiz Otávio Miranda",
       url: "https://www.udemy.com/course/python-3-do-zero-ao-avancado/",
-      img: "https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og=w600-h300-pc0xffffff-pd",
+      img: "https://logos-world.net/wp-content/uploads/2021/11/Udemy-Emblem.png",
     },
   ];
 

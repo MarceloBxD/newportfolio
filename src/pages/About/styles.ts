@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 interface IProps {
-  background: string;
+  background?: string;
+  bgColor?: string;
 }
 
 export const Container = styled.div`
@@ -84,9 +85,12 @@ export const Course = styled.div<IProps>`
   height: 300px;
   background-image: ${(props) => `url(${props.background})`};
   border-radius: 10px;
+  background-color: ${(props) => `url(${props.bgColor})`};
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-position: center;
+  background-size: contain;
 
   display: flex;
   flex-direction: column;
