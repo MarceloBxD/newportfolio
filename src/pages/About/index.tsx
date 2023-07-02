@@ -40,12 +40,13 @@ const About: React.FC = () => {
         , desenvolvedor front-end com foco em ReactJS. Apaixonado por
         programação com muita sede de aprendizado e sempre buscando novos
         desafios. Estou no processo de graduação em Engenharia de Computação
-        pela UERJ. Algumas das tecnologias nas quais eu possuo conhecimento
-        estão disponíveis no meu Linkedln. Atualmente faço parte de uma agência
-        de desenvolvimento de software e já realizei alguns trabalhos como
+        pela UERJ. As tecnologias nas quais eu possuo conhecimento amplo estão
+        disponíveis no meu Linkedln. Atualmente faço parte de uma agência de
+        desenvolvimento de software e já realizei alguns trabalhos como
         freelancer. Estou sempre tentando me manter atualizado e expandir minhas
-        áreas de conhecimento. Já realizei diversos cursos que possuem grande
-        participação na minha formação como desenvolvedor.
+        áreas de conhecimento, e para isso venho realizando diversos cursos que
+        possuem grande participação na minha formação e atuação como
+        desenvolvedor.
       </C.Description>
       <Link to="/">
         <C.ButtonLeft title="Voltar para página inicial">
