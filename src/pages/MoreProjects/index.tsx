@@ -1,13 +1,13 @@
 import React from "react";
 import * as C from "./styles";
 
-import barbearia from "../../../public/images/barbearia.png";
-import climatempo from "../../../public/images/climatempo.png";
-import git from "../../../public/images/github.png";
-import metamask from "../../../public/images/metamask.png";
-import quiz from "../../../public/images/quiz.png";
-import reciclelivros from "../../../public/images/reciclelivros.png";
-import texttransform from "../../../public/images/TextTransformer.png";
+import barbearia from "../../images/barbearia.png";
+import climatempo from "../../images/climatempo.png";
+import git from "../../images/github.png";
+import metamask from "../../images/metamask.png";
+import quiz from "../..//images/quiz.png";
+import reciclelivros from "../../images/reciclelivros.png";
+import texttransform from "../../images/TextTransformer.png";
 
 import { Link } from "react-router-dom";
 

@@ -30,7 +30,7 @@ const About: React.FC = () => {
       <C.Title>Desenvolvedor Front-End</C.Title>
 
       <C.AboutText>Sobre</C.AboutText>
-      <C.Image src="../../../public/images/me.jpg" />
+      <C.Image src="../../images/me.jpg" />
       <C.Description>
         <span
           style={{ fontWeight: "bold", fontSize: "22px", color: "#000000" }}

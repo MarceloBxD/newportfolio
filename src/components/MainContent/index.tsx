@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import * as C from "./styles";
 import * as S from "../Aside/styles";
-import freela from "../../../public/images/freela.jpg";
-import programmer from "../../../public/images/programmer.jpg";
-import mobile from "../../../public/images/mobile.jpg";
+import freela from "../../images/freela.jpg";
+import programmer from "../../images/programmer.jpg";
+import mobile from "../../images/mobile.jpg";
 import { Link } from "react-router-dom";
 
 const MainContent: React.FC = () => {

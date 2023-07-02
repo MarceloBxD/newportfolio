@@ -8,7 +8,7 @@ import { FiGithub } from "react-icons/fi";
 import { IconContext } from "react-icons";
 
 // Currículo
-import file from "../../../public/files/CV.pdf";
+import file from "../../files/CV.pdf";
 
 const Aside: React.FC = () => {
   const IconProvider = ({ children }: any) => {
